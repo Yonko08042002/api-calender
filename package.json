@@ -1,0 +1,23 @@
+{
+  "name": "api-calender",
+  "scripts": {
+    "dev": "tsx watch src/index.ts",
+    "start": "vercel dev --yes",
+    "build": "tsc && tsc-alias",
+    "deploy": "vercel",
+    "postinstall": "prisma generate"
+  },
+  "dependencies": {
+    "@hono/node-server": "^1.12.0",
+    "@prisma/client": "^5.16.2",
+    "hono": "^4.4.6",
+    "tsc-alias": "^1.8.10"
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.5",
+    "dotenv": "^16.4.5",
+    "tsx": "^4.15.6",
+    "typescript": "^4.9.5",
+    "vercel": "^32.4.1"
+  }
+}
